@@ -20,7 +20,7 @@ function wrapAdjective (flair="*") {
     return `You are ${flair}${angry}${flair}!`
  }
 }
-    
+    wrapAdjective()
 
 let Calculator = {
     add: function (a,b){
@@ -37,13 +37,13 @@ let Calculator = {
     } ,
 }
     
-
+Calculator()
     
 
-    function actionApplyer (start, array){
+ function actionApplyer (start, array){
     let a = start
-    for(let i = 0; i < array.length; i++){
+        for(let i = 0; i < array.length; i++){
     a = array[i](a)
     }
-    return a
-    }
+        return a
+}
